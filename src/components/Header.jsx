@@ -52,8 +52,8 @@ const Header = () => {
       )}
 
       {/* Desktop/Tablet Menu */}
-      <div className="desktop-menu hidden md:flex md:flex-row md:justify-between md:items-center md:bg-black md:space-x-10">
-        <h1 className="text-[#FF5E00] font-medium text-xl tracking-tighter mx-4">
+      <div className="desktop-menu hidden md:flex md:flex-row md:justify-center md:items-center md:bg-black md:space-x-6">
+        <h1 className="text-[#FF5E00] font-medium text-xl tracking-tighter  mx-4">
           HOO!
           <br />
           Men’s Fashion
