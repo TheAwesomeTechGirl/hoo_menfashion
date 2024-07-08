@@ -54,7 +54,7 @@ function Product() {
       </div>
 
       {/* This div will show on all screens */}
-      <div className="md:border md:border-solid rounded-lg border-gray-300  md:w-[900px] md:h-[900px]   space-y-8 p-6 m-4 md:m-16">
+      <div className="md:border md:border-solid rounded-lg border-gray-300  md:w-[900px] md:h-[1000px]   space-y-8 p-6 m-4 md:m-16">
         <span className="flex flex-row space-x-4">
           <h1 className="text-black font-semibold text-base hidden md:block">
             FRONTLINE OFFICIAL STORE
