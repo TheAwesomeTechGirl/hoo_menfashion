@@ -7,10 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      boxShadow: {
+        custom: '-6px -2px 46.9px 1px rgba(0, 0, 0, 0.15)',
       },
     },
   },

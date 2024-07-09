@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from 'next/link';
 import { RiMenu2Fill } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineShoppingBag, MdArrowDropDown } from "react-icons/md";
@@ -26,11 +27,29 @@ const Header = () => {
       {/* Conditional rendering for mobile */}
       {showMenu && (
         <ul className="flex flex-col items-center bg-black text-white">
-          <li className="py-2">Shop</li>
-          <li className="py-2">Stories</li>
-          <li className="py-2">About</li>
-          <li className="py-2">Blog</li>
-          <li className="py-2">Contact</li>
+
+<li className="py-2 hover:text-blue-500 cursor-pointer"> 
+     <Link href="/">
+        Shop
+      </Link></li>
+  <li className="py-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Stories
+      </Link></li>
+
+     < li className="py-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  About
+      </Link></li>
+      < li className="py-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Blog
+      </Link></li>
+      < li className="py-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Contact
+      </Link></li>
+         
         </ul>
       )}
 
@@ -52,19 +71,37 @@ const Header = () => {
       )}
 
       {/* Desktop/Tablet Menu */}
-      <div className="desktop-menu hidden md:flex md:flex-row md:justify-center md:items-center md:bg-black md:space-x-6">
+      <div className="desktop-menu hidden md:flex md:flex-row md:justify-center md:items-center  md:space-x-6">
         <h1 className="text-[#FF5E00] font-medium text-xl tracking-tighter  mx-4">
           HOO!
           <br />
           Men’s Fashion
         </h1>
-        <ul className="flex flex-row text-white font-normal text-base">
-          <li className="mx-2">Shop</li>
-          <li className="mx-2">Stories</li>
-          <li className="mx-2">About</li>
-          <li className="mx-2">Blog</li>
-          <li className="mx-2">Contact</li>
-        </ul>
+        <ul className="flex flex-row text-black font-normal text-base">
+      
+  <li className="mx-2 hover:text-blue-500 cursor-pointer"> 
+     <Link href="/">
+        Shop
+      </Link></li>
+  <li className="mx-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Stories
+      </Link></li>
+
+     < li className="mx-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  About
+      </Link></li>
+      < li className="mx-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Blog
+      </Link></li>
+      < li className="mx-2 hover:text-blue-500 cursor-pointer">
+  <Link href="/">
+  Contact
+      </Link></li>
+</ul>
+
 
         <form className="flex items-center space-x-2 p-2 border w-[300px] h-[36px] border-gray-300 bg-gray-300 rounded-md mx-4">
           <CiSearch className="text-gray-500" />
@@ -74,15 +111,17 @@ const Header = () => {
             className="p-1 border-none focus:outline-none bg-gray-300"
           />
         </form>
-        <span className="flex flex-row items-center mx-4 text-white font-normal text-base">
-          <MdOutlineShoppingBag /> cart(2)
+        <span className="flex flex-row items-center mx-4 text-black font-normal text-base hover:text-blue-500 cursor-pointer">
+          <MdOutlineShoppingBag className="m-1 " /> cart(2)
         </span>
-        <p className="flex flex-row text-white font-normal text-base items-center">
+        <p className="flex flex-row text-black font-normal text-base items-center hover:text-blue-500 cursor-pointer">
           Olumide
           <span className="m-2 w-10">
-            <MdArrowDropDown />
+            <MdArrowDropDown className=""/>
           </span>
         </p>
+
+
       </div>
     </div>
   );
