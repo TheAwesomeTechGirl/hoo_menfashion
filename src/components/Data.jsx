@@ -1,4 +1,7 @@
 import Link from 'next/link';
+
+import Image from "next/legacy/image";
+
 const productData = [
   {
     id: 1,
@@ -87,25 +90,49 @@ const productData = [
 ];
 
 
-import Image from "next/legacy/image";
 
 const Data = () => {
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {productData.map(product => (
-        <div className="space-y-3" key={product.id}>
-        <Link href="/productpage">
-        
-        <Image src={product.productImage} alt={product.productName} width={200} height={200} />
+return (
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    {productData.map(product => (
+      <div className="space-y-3" >
+        <Link href={`./Product`}>
+         
+            <Image src={product.productImage} alt={product.productName} width={200} height={200} />
+         
         </Link>
-          <h2 className="font-normal text-xs">{product.brand}</h2>
-          <p className="font-normal text-xs">{product.productName}</p>
-          <p className="font-normal text-xs text-[#FF5E00]">${product.amount}</p>
-        </div>
-      ))}
-    </div>
-  );
+        <h2 className="font-normal text-xs">{product.brand}</h2>
+        <p className="font-normal text-xs">{product.productName}</p>
+        <p className="font-normal text-xs text-[#FF5E00]">${product.amount}</p>
+      </div>
+    ))}
+  </div>
+);
 };
 
-export default Data;
+export default Data
 
+// const urlParams = new URLSearchParams(window.location.search);
+// const id = urlParams.get('id');
+// //Using Array Map method
+// const selectedImage = productData.find(product => product.id == id);
+// if (selectedImage) {
+//     const detailsHTML = `<div><Image src={product.productImage} alt={product.productName} width={200} height={200} /></div>`
+//          const detailsContainer = document.getElementById('detailsContainer');
+//          detailsContainer.innerHTML = detailsHTML;
+//      } else {
+//          const errorMessage = '<p>Product  not found.</p>';
+//          const detailsContainer = document.getElementById('detailsContainer');
+//          detailsContainer.innerHTML = errorMessage;
+//      }
+
+
+
+
+
+
+
+
+
+
+ 
