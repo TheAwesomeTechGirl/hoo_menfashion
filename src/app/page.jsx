@@ -1,18 +1,11 @@
-// import Image from "next/image";
-import Header from "@/components/Header";
-import Filter from "@/components/Filter";
-import Products from "@/components/Products";
-import Footer from "@/components/Footer";
+import Shop from "./Shop"
 
 
 export default function Home() {
   return (
     <main className="">
       <div className="">
-      <Header/>
-      <Filter/>
-      <Products/>
-      <Footer/>
+ <Shop/>
             </div>
     </main>
   );

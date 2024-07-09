@@ -13,15 +13,15 @@ const Header = () => {
   return (
     <div className="menu">
       {/* Mobile Menu */}
-      <div className="mobile-menu flex flex-row items-center justify-between p-4 md:hidden">
+      <div className="mobile-menu flex flex-row items-center justify-between p-2 md:hidden">
         <RiMenu2Fill className="w-10" onClick={() => setShowMenu(!showMenu)} />
-        <h1 className="text-[#FF5E00] font-medium text-sm">
+        <h1 className="text-[#FF5E00] font-medium text-sm mr-6">
           HOO!
           <br />
           Men’s Fashion
         </h1>
-        <CiSearch onClick={() => setShowSearch(!showSearch)} />
-        <MdOutlineShoppingBag onClick={() => setShowCart(!showCart)} />
+        <CiSearch className='mr-10' onClick={() => setShowSearch(!showSearch)} />
+        <MdOutlineShoppingBag className='mr-10' onClick={() => setShowCart(!showCart)} />
       </div>
 
       {/* Conditional rendering for mobile */}
@@ -71,7 +71,7 @@ const Header = () => {
       )}
 
       {/* Desktop/Tablet Menu */}
-      <div className="desktop-menu hidden md:flex md:flex-row md:justify-center md:items-center  md:space-x-6">
+      <div className="desktop-menu hidden md:flex md:flex-row md:justify-center md:items-center p-2  md:space-x-6">
         <h1 className="text-[#FF5E00] font-medium text-xl tracking-tighter  mx-4">
           HOO!
           <br />
@@ -112,7 +112,7 @@ const Header = () => {
           />
         </form>
         <span className="flex flex-row items-center mx-4 text-black font-normal text-base hover:text-blue-500 cursor-pointer">
-          <MdOutlineShoppingBag className="m-1 " /> cart(2)
+          <MdOutlineShoppingBag  /> cart(2)
         </span>
         <p className="flex flex-row text-black font-normal text-base items-center hover:text-blue-500 cursor-pointer">
           Olumide
