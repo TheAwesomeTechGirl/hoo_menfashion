@@ -48,7 +48,7 @@ function Products() {
         </span>
       </p>
         <h1 className="font-semibold text-base text-black mb-2">BRAND</h1>
-        <div className="list-none space-y-3">
+        <div className="list-none space-y-3 ">
         <Checkbox/>
         </div>
         <h1 className="font-semibold text-base text-black mt-3">PRICE</h1>

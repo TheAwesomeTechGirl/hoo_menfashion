@@ -25,9 +25,9 @@ const CheckboxList = () => {
   const items = ['Zara', 'Yerima', 'Verisus', 'OML', 'Ogoscit'];
 
   return (
-    <ul className="list-none space-y-3">
+    <ul className="list-none space-y-3 ">
       {items.map((item, index) => (
-        <li key={index} className="flex items-center">
+        <li key={index} className="flex items-center ml-4">
           <Checkbox
             index={index}
             checkedIndex={checkedIndex}
